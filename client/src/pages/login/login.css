@@ -1,5 +1,5 @@
 .login-form-header{
- margin-top: 8rem;
+ margin-top: 0rem;
 }
 .header{
     font-size: 50px;
@@ -9,4 +9,16 @@
 }
 .signup-form-button{
    margin-left: 1rem;
+}
+.login-page{
+   margin-top: 14rem;
+   background-color: white;
+}
+body{
+   max-height: 400px;
+   
+}
+.gutter-box{
+   margin-top: -2rem;
+
 }

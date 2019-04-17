@@ -123,16 +123,12 @@ class NormalLoginForm extends React.Component {
     return (
      
       <div className='login-page'>
-      <Row gutter={16} className="">
-      <Col className="gutter-row" span={12} offset={6}>
+    
+      <Row gutter={0} className="login-form-header">
+      <Col className="gutter-row" span={8} offset={8}>
       <div className=''>
         <h1 className='header'>Trackrr</h1>
       </div>
-      </Col>
-      </Row>
-   
-      <Row gutter={16} className="login-form-header">
-      <Col className="gutter-row" span={12} offset={6}>
       <div className='gutter-box'>
       <Form onSubmit={this.handleSubmit} className="login-form">
         <Form.Item>
@@ -150,9 +146,7 @@ class NormalLoginForm extends React.Component {
           )}
         </Form.Item>
         <Form.Item>
-        
-          
-          
+    
           <Button type="primary" htmlType="submit" className="login-form-button btn">
             Log in
           </Button>

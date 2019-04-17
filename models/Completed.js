@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const TaskSchema = new Schema({
+const CompletedSchema = new Schema({
   user_id: {
       type: String,
       default: ''
@@ -9,15 +9,12 @@ const TaskSchema = new Schema({
   Content: {
       type: String,
   },
-  When: {
-      type: String,
+  WhenCompleted: {
+      type: Date,
   },
-  Done: {
-      type: Boolean,
-  },
- 
+  
 });
 
-const Tasks = mongoose.model("Tasks", TaskSchema);
+const Completed = mongoose.model("Completed Tasks", CompletedSchema);
  
-module.exports = Tasks;
+module.exports = Completed;

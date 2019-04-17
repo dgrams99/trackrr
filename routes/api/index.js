@@ -8,9 +8,15 @@ const verify = require("./verify");
 const logout = require("./logout");
 const Delete = require("./delete");
 const Daily = require("./Daily");
+const Completed = require("./Completed");
+const UnFinished = require("./UnFinsished");
 
 
 
+
+router.use("/task/unfinished", UnFinished);
+
+router.use("/task/completed", Completed);
 
 router.use("/task/daily", Daily);
 

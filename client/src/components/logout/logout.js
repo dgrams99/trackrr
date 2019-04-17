@@ -7,7 +7,6 @@ import {
    Button 
 } from 'antd';
 import   '../../antd/dist/antd.css';
-import axios from 'axios';
 class logout extends React.Component {
 
   state = {
@@ -43,7 +42,7 @@ class logout extends React.Component {
         <Button 
         type="primary"
         onClick={this.logout}
-        >Primary</Button>
+        >Logout</Button>
      </div>
     );
   }
